@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list app</title>
+  </head>
+  <body></body>
+  <script>
+    let a;
+    let b;
+
+    function add() {
+      return a + b;
+    }
+    function sub() {
+      return a - b;
+    }
+    function divide() {
+      return a / b;
+    }
+    function multiple() {
+      return a * b;
+    }
+
+    let user = prompt("Please Enter a number");
+    let user2 = prompt("Please Enter a number");
+
+
+    let math = prompt(
+      "Choose what arithmethic do you want Add,Sub,Divide,Multi",
+    );
+
+    //👉 prompt() gets input from the user and returns it as a string, which you can store in a variable.
+    //btw using prompt is good in this situation to help understand the fundamentals of javascript but its not
+    //really a good practice and real programmers dont really use this function because its outdated and 
+    //unstylable 
+
+    a = Number(user);
+    b = Number(user2);
+
+    //👉 It converts the value stored in user into a number, then assigns that result to a.
+
+    if (math === "Add") {
+      console.log(add());
+    } else if (math === "Sub") {
+      console.log(Sub());
+    } else if (math === "Divide") {
+      console.log(divided());
+    } else if (math === "Multi"){
+        console.log(multiple())
+    } else {
+      console.log(nothing);
+    }
+
+
+    //events (deeper)
+    //arrays
+    //objects
+  </script>
+</html>
